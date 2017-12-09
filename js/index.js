@@ -48,17 +48,18 @@ $(function(){
 	    $('.roomDetail .friends-detail').html('<i class="iconfont">&#xe612;</i>'+outPut(friendsArray));
 	   
 	})
-	$rl.click(function(){
-		$(".roomType dl ").toggleClass("active");
-			
-	})
-	//默认第一个房间被点击
+		//默认第一个房间被点击
 		var $rdd1 =$(".roomType dl dd").eq(0);
 		$rdd1.trigger("click");
 		$rdd1.addClass("on");
 
-})
 
+	$rl.click(function(){
+		$(".roomType dl ").toggleClass("active");
+			
+	})
+
+})
 //将第一个字母转换为小写
 function firstLowCase(string){
 	return string.charAt(0).toLowerCase()+string.slice(1)
