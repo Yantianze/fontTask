@@ -1,0 +1,177 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:18px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 5px;
+}
+.breadcrumb{
+	padding: 8px;
+    background-color: #eee;
+    font-size: 14px;
+    display: flex;
+}
+.breadcrumb>li {
+    display: inline-block;
+    border-top:2px #000 solid;
+    border-bottom:2px #000 solid; 
+    padding:6px 35px;
+    position:relative;
+
+}
+.breadcrumb>li:first-child{
+	border-left:2px #000 solid; 
+}
+.breadcrumb>li:after {
+	content: "";
+ 	width:21px;
+    height: 21px;
+	border-right: 2px solid #000;
+    border-top: 2px solid #000;
+    position: absolute;
+    display: inline-block;
+    transform: rotate(45deg);
+    right:-11px;
+    top: 4px;
+	
+}
+#banner{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+#banner img{
+	width:100%;
+}
+#summary {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+	
+	font-size: 16px;
+	padding:20px;
+	line-height: 20px;
+}
+#summary .right{
+	flex:2;
+	display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    line-height: 30px;
+
+}
+#summary .left{
+	flex:5;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+#summary button{
+	height:35px;
+	margin-top: 5px;
+	border-radius: 8px;
+	outline: 0 none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border:2px solid #000;
+}
+#room{
+	margin-top:30px;
+	padding: 0 20px;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+#room .roomType{
+	flex:1;
+	margin-right:40px;
+}
+#room .roomType dt{
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#room .roomType dl dd:last-of-type{
+	border-bottom:2px solid #000;
+}
+#room .roomType dl dd:nth-of-type(1){
+	border-top:2px solid #000;
+}
+#room .roomType dd{
+	padding:10px;
+	cursor: pointer;
+	border-right:2px solid #000;
+	border-left: 2px solid #000;
+	position:relative;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	
+}
+#room .roomType dd.on{
+
+	font-weight: bold;
+	border-right:0 none;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+#room .roomType dd.on:after{
+	content: "";
+    width: 29px;
+    height: 29px;
+    border-right: 2px solid #000;
+    border-top: 2px solid #000;
+    position: absolute;
+    display: inline-block;
+    transform: rotate(45deg);
+    right: -15px;
+    top: 5px;
+}
+#room .roomDetail{
+
+	flex:5;
+	margin-bottom: 50px;
+	margin-top: 30px;
+
+}
+#room .roomDetail h2{
+	text-align: left;
+	font-weight: bold;
+	font-size: 25px;
+
+}
+#facilitis{
+	margin-left: 20%;
+	padding-bottom: 100px;
+
+}
+#facilitis h2{
+	text-align: left;
+	font-weight: bold;
+	font-size: 25px;
+	margin-bottom: 40px;
+}
+#facilitis label{
+	display:inline-block;
+	width:23%;
+	height: 60px;
+}
